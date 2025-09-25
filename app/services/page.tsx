@@ -1,3 +1,5 @@
+"use client";
+
 const ChurchSchedule = () => {
   const programs = [
     {
@@ -5,16 +7,16 @@ const ChurchSchedule = () => {
       day: "Lundi à Vendredi",
       time: "5h30 - 6h30",
       description:
-        "Un moment de prière et d'édification pour bien commencer la journée.",
+        "Un moment de prière et d édification pour bien commencer la journée.",
       icon: "🌅",
       color: "from-yellow-400 to-yellow-500",
     },
     {
-      title: "Culte d'édification",
+      title: "Culte d édification",
       day: "Mardi",
       time: "16h30 - 19h45",
       description:
-        "Un temps de louange, d'enseignement et d'encouragement spirituel.",
+        "Un temps de louange, d&apos;enseignement et d encouragement spirituel.",
       icon: "⛪",
       color: "from-blue-400 to-blue-500",
     },
@@ -28,7 +30,7 @@ const ChurchSchedule = () => {
       color: "from-purple-400 to-purple-500",
     },
     {
-      title: "Culte d'action de grâce",
+      title: "Culte d action de grâce",
       day: "Dimanche",
       time: "9h30 - 12h30",
       description:
@@ -43,7 +45,7 @@ const ChurchSchedule = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
-            Programmes de l'Église
+            Programmes de l Église
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Découvrez nos différents cultes et activités hebdomadaires pour

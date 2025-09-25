@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image"; // ✅ Import de next/image
 
 const Footer = () => {
   return (
@@ -8,11 +11,14 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 rounded-full overflow-hidden shadow-md">
-                <img
-                  src="/images/logo_eglise.jpg" // Chemin vers ton logo
+              <div className="w-12 h-12 rounded-full overflow-hidden shadow-md relative">
+                <Image
+                  src="/images/logo_eglise.jpg"
                   alt="Logo Église Mievi 2"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover rounded-full"
+                  sizes="48px"
+                  priority
                 />
               </div>
               <span className="text-2xl font-serif font-semibold">
@@ -21,7 +27,7 @@ const Footer = () => {
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               Une communauté de foi dédiée à servir Dieu et notre prochain à
-              travers l'amour, l'espérance et la compassion.
+              travers l&apos;amour, l&apos;espérance et la compassion.
             </p>
             <div className="flex space-x-4">
               {/* Facebook */}

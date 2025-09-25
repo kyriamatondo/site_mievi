@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image"; // ✅ Import de next/image
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,11 +26,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 flex-shrink-0 overflow-hidden rounded-full">
-              <img
-                src="/images/logo_eglise.jpg" // Chemin vers ton logo
+            <div className="w-12 h-12 flex-shrink-0 overflow-hidden rounded-full relative">
+              <Image
+                src="/images/logo_eglise.jpg" // ✅ Optimisé avec next/image
                 alt="Logo Église Mievi 2"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover rounded-full"
+                sizes="48px"
+                priority
               />
             </div>
             <div>

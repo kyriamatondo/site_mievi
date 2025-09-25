@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const Home = () => {
@@ -12,13 +14,13 @@ const Home = () => {
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-6 mt-4">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
             <span className="text-sm font-medium">
-              Culte d'action de grace tous les dimanches à 09h30
+              Culte d&apos;action de grâce tous les dimanches à 09h30
             </span>
           </div>
 
           {/* Hero title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Bienvenue à l'{" "}
+            Bienvenue à l&apos;{" "}
             <span className="bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
               Église MIEVI KISENSO 2
             </span>
@@ -26,8 +28,9 @@ const Home = () => {
 
           {/* Hero description */}
           <p className="text-xl md:text-2xl mb-10 opacity-90 leading-relaxed">
-            Une communauté de foi, d'espérance et d'amour. Rejoignez-nous pour
-            célébrer la parole de Dieu et grandir ensemble dans la grâce.
+            Une communauté de foi, d&apos;espérance et d&apos;amour.
+            Rejoignez-nous pour célébrer la parole de Dieu et grandir ensemble
+            dans la grâce.
           </p>
 
           {/* Call to action buttons */}

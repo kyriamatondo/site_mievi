@@ -5,11 +5,11 @@ import Image from "next/image";
 const photos = [
   {
     src: "/images/pasteur.jpg",
-    alt: "Pasteur de l'église",
+    alt: "Pasteur de l église",
   },
   {
     src: "/images/interieur.jpg",
-    alt: "Intérieur de l'église pendant un culte",
+    alt: "Intérieur de l église pendant un culte",
   },
   {
     src: "/images/mpila.jpg",
@@ -21,7 +21,7 @@ const photos = [
   },
   {
     src: "/images/temple.jpg",
-    alt: "Le temple de l'église",
+    alt: "Le temple de l&apos;église",
   },
   {
     src: "/images/duo.jpg",
@@ -36,7 +36,7 @@ const Gallery = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">
-            Galerie de l'Église
+            Galerie de l&apos;Église
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Découvrez en images la vie de notre église, nos cultes et nos
